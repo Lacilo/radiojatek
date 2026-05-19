@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class CameraMovement
+public class CameraMovement : MonoBehaviour
 {
-    public float sensX;
-    public float sensY;
+    public float sensX = 100f;
+    public float sensY = 100f;
 
     public Transform orientation;
     public Transform transform;
@@ -27,7 +27,7 @@ public class CameraMovement
 
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-        orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+        orientation.Rotate(Vector3.up * mouseX);
+        
     }
 }
