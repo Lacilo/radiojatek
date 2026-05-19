@@ -4,6 +4,9 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
     public float speed = 12f;
+    public float gravity = -9.81f;
+
+    Vector3 velocity;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,5 +23,14 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
+
+        velocity.y += gravity * Time.deltaTime;
+
+        controller.Move(velocity * Time.deltaTime);
+
+        if (controller.isGrounded) 
+        {
+            velocity.y = 0f;
+        }
     }
 }

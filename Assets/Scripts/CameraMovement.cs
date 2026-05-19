@@ -5,8 +5,8 @@ public class CameraMovement : MonoBehaviour
     public float sensX = 100f;
     public float sensY = 100f;
 
-    public Transform orientation;
-    public Transform transform;
+    public Transform PlayerBody;
+    public Transform Camera;
 
     float xRotation;
     float yRotation;
@@ -27,7 +27,7 @@ public class CameraMovement : MonoBehaviour
 
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        orientation.Rotate(Vector3.up * mouseX);
-        
+        PlayerBody.Rotate(Vector3.up * mouseX);
+        Camera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
     }
 }
