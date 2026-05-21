@@ -53,7 +53,6 @@ Material:
   - TransparentDepthPostpass
   - TransparentBackface
   - RayTracingPrepass
-  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -92,7 +91,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Backface_Normal_Mode: -1
+    - Backface_Normal_Mode: 0
     - Diffusion_Profile: 3.5648174
     - EFFECT_BILLBOARD: 1
     - EFFECT_EXTRA_TEX: 1
@@ -103,7 +102,7 @@ Material:
     - _AlphaSrcBlend: 1
     - _AlphaToMask: 0
     - _AlphaToMaskInspectorValue: 0
-    - _BillboardKwToggle: -1
+    - _BillboardKwToggle: 0
     - _BlendMode: 0
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
