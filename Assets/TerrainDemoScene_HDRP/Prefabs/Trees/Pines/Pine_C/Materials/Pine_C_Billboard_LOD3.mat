@@ -24,17 +24,28 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Pine_C_Billboard_LOD3
-  m_Shader: {fileID: -6465566751694194690, guid: cbd3e1cc4ae141c42a30e33b4d666a61, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 4819724840ee9444f9da841b477038ce, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_ValidKeywords:
+  - EFFECT_BILLBOARD
+  - _ALPHATEST_ON
+  - _DISABLE_DECALS
+  - _DISABLE_SSR
+  - _DISABLE_SSR_TRANSPARENT
+  - _MATERIAL_FEATURE_TRANSMISSION
+  - _WINDQUALITY_FASTEST
+  m_InvalidKeywords:
+  - EFFECT_BUMP
+  - EFFECT_EXTRA_TEX
+  - EFFECT_HUE_VARIATION
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2450
   stringTagMap:
     MotionVector: User
+    RenderType: TransparentCutout
   disabledShaderPasses:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
@@ -56,10 +67,6 @@ Material:
         m_Texture: {fileID: 2800000, guid: 9ac807d2606f2a24ab6f7c13b85f1db5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NormalMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _SubsurfaceTex:
         m_Texture: {fileID: 2800000, guid: 4e3e9f2a55d6511488fa952048fb9707, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -78,18 +85,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Backface_Normal_Mode: 0
     - Diffusion_Profile: 3.5648174
     - EFFECT_BILLBOARD: 1
     - EFFECT_EXTRA_TEX: 1
     - _AddPrecomputedVelocity: 0
-    - _AlphaClipThreshold: 0.4
+    - _AlphaClipThreshold: 0.1
     - _AlphaCutoffEnable: 1
     - _AlphaDstBlend: 0
     - _AlphaSrcBlend: 1
     - _AlphaToMask: 0
     - _AlphaToMaskInspectorValue: 0
     - _BillboardKwToggle: 0
+    - _BillboardShadowFade: 0.5
     - _BlendMode: 0
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 2
@@ -112,8 +119,6 @@ Material:
     - _NormalMapKwToggle: 1
     - _OpaqueCullMode: 2
     - _PerPixelSorting: 0
-    - _QueueControl: 0
-    - _QueueOffset: 0
     - _RayTracing: 0
     - _ReceivesSSR: 0
     - _ReceivesSSRTransparent: 0
@@ -140,6 +145,7 @@ Material:
     - _SubsurfaceScale: 1
     - _SupportDecals: 0
     - _SurfaceType: 0
+    - _Thickness: 1
     - _TransmissionEnable: 1
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
@@ -148,13 +154,9 @@ Material:
     - _TransparentSortPriority: 0
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
+    - _TwoSided: 2
     - _UseShadowThreshold: 0
     - _WINDQUALITY: 1
-    - _WIND_BRANCH1: 0
-    - _WIND_BRANCH2: 0
-    - _WIND_RIPPLE: 0
-    - _WIND_SHARED: 0
-    - _WIND_SHIMMER: 0
     - _WindQuality: 1
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 3
@@ -171,16 +173,3 @@ Material:
     - _SubsurfaceColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &3175978337631049591
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Editor::UnityEditor.Rendering.Universal.AssetVersion
-  version: 10
