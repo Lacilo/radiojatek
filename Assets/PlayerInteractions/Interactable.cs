@@ -13,7 +13,7 @@ public class Interactable : MonoBehaviour, IInteractable
 
         done = true;
 
-        var player = FindAnyObjectByType<PlayerObjective>();
+        var player = FindAnyObjectByType<PlayerObjectives>();
         player.AddObjective();
     }
 }
