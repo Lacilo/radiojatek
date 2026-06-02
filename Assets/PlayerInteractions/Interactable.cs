@@ -15,7 +15,5 @@ public class Interactable : MonoBehaviour, IInteractable
 
         var player = FindAnyObjectByType<PlayerObjective>();
         player.AddObjective();
-
-        gameObject.SetActive(false);
     }
 }
