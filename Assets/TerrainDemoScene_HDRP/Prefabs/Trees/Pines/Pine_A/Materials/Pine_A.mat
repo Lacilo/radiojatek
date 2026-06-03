@@ -24,7 +24,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Pine_A
-  m_Shader: {fileID: -6465566751694194690, guid: 4819724840ee9444f9da841b477038ce, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 0768909a4def7a940821dc16dad27b1c, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
@@ -35,10 +35,7 @@ Material:
   - _DOUBLESIDED_ON
   - _MATERIAL_FEATURE_TRANSMISSION
   - _WINDQUALITY_BEST
-  m_InvalidKeywords:
-  - EFFECT_BUMP
-  - EFFECT_EXTRA_TEX
-  - EFFECT_HUE_VARIATION
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
@@ -51,6 +48,7 @@ Material:
   - TransparentDepthPostpass
   - TransparentBackface
   - RayTracingPrepass
+  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -95,8 +93,6 @@ Material:
     - _AlphaSrcBlend: 1
     - _AlphaToMask: 0
     - _AlphaToMaskInspectorValue: 0
-    - _BillboardKwToggle: 0
-    - _BillboardShadowFade: 0.5
     - _BlendMode: 0
     - _ConservativeDepthOffsetEnable: 0
     - _CullMode: 0
@@ -114,7 +110,6 @@ Material:
     - _HueVariationKwToggle: 1
     - _MaterialID: 5
     - _MaterialTypeMask: 32
-    - _Metallic: 0
     - _Mip_Bias: 1
     - _Mip_Scale: 0
     - _NormalMapKwToggle: 1
@@ -141,12 +136,9 @@ Material:
     - _StencilWriteMaskDistortionVec: 4
     - _StencilWriteMaskGBuffer: 15
     - _StencilWriteMaskMV: 41
-    - _SubsurfaceIndirect: 0.25
-    - _SubsurfaceKwToggle: 0
     - _SubsurfaceScale: 0.893
     - _SupportDecals: 0
     - _SurfaceType: 0
-    - _Thickness: 1
     - _TransmissionEnable: 1
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2
@@ -155,7 +147,6 @@ Material:
     - _TransparentSortPriority: 0
     - _TransparentWritingMotionVec: 0
     - _TransparentZWrite: 0
-    - _TwoSided: 0
     - _UseShadowThreshold: 0
     - _WINDQUALITY: 4
     - _WindQuality: 4
@@ -166,11 +157,10 @@ Material:
     m_Colors:
     - Diffusion_Profile_Asset: {r: 2.2888926e+38, g: 1.2389358e-26, b: 7.69327e-37, a: 0.00018220427}
     - _AO_Remap: {r: 0, g: 0.5, b: 0, a: 0}
-    - _Color: {r: 0.39215687, g: 0.50980395, b: 0.27450982, a: 1}
+    - _Color: {r: 0.65882355, g: 0.7254902, b: 0.6392157, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _HueVariationColor: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _Smoothness_Remap: {r: 0.3, g: 1, b: 0, a: 0}
-    - _SubsurfaceColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

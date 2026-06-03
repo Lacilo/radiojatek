@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: e17a253999e7e294981e5ed8ce32646f
-AssetOrigin:
-  serializedVersion: 1
-  productId: 213198
-  packageName: Unity Terrain - HDRP Demo Scene
-  packageVersion: 1.0.3
-  assetPath: Assets/TerrainDemoScene_HDRP/Prefabs/Trees/Pines/Pine_D/Pine_D.st
-  uploadId: 727864
 SpeedTreeImporter:
   externalObjects:
   - first:
@@ -44,23 +37,14 @@ SpeedTreeImporter:
       assembly: UnityEngine.CoreModule
       name: Pine_D_LOD2
     second: {fileID: 2100000, guid: ede0004c9eab0fe47bdadae32797b5dd, type: 2}
-  serializedVersion: 7
+  serializedVersion: 6
   mainColor: {r: 1, g: 1, b: 1, a: 1}
   hueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
   alphaTestRef: 0.33
-  enableHueVariation: 0
-  enableBumpMapping: 1
-  enableSubsurfaceScattering: 1
   bestWindQuality: 4
-  selectedWindQuality: 4
-  enableShadowCasting: 1
-  enableShadowReceiving: 1
-  enableLightProbes: 1
-  reflectionProbeEnumValue: 1
   hasBillboard: 1
   lODSettings:
-  - enableSettingOverride: 1
-    height: 0.6031983
+  - height: 0.5
     castShadows: 1
     receiveShadows: 1
     useLightProbes: 1
@@ -69,8 +53,7 @@ SpeedTreeImporter:
     enableHue: 1
     enableSubsurface: 1
     windQuality: 4
-  - enableSettingOverride: 1
-    height: 0.35336906
+  - height: 0.25
     castShadows: 1
     receiveShadows: 1
     useLightProbes: 1
@@ -79,8 +62,7 @@ SpeedTreeImporter:
     enableHue: 1
     enableSubsurface: 1
     windQuality: 4
-  - enableSettingOverride: 1
-    height: 0.14591709
+  - height: 0.125
     castShadows: 1
     receiveShadows: 1
     useLightProbes: 1
@@ -89,8 +71,7 @@ SpeedTreeImporter:
     enableHue: 1
     enableSubsurface: 1
     windQuality: 4
-  - enableSettingOverride: 1
-    height: 0.034508444
+  - height: 0.01
     castShadows: 1
     receiveShadows: 1
     useLightProbes: 0
@@ -104,13 +85,16 @@ SpeedTreeImporter:
   billboardTransitionCrossFadeWidth: 0.25
   fadeOutWidth: 0.25
   scaleFactor: 0.2
-  unitConversionEnumValue: 4
-  motionVectorModeEnumValue: 1
-  generateColliders: 1
-  generateRigidbody: 1
   materialVersion: 3
   materialLocation: 1
   fileIDType: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 213198
+  packageName: Unity Terrain - HDRP Demo Scene
+  packageVersion: 1.0.3
+  assetPath: Assets/TerrainDemoScene_HDRP/Prefabs/Trees/Pines/Pine_D/Pine_D.st
+  uploadId: 727864
