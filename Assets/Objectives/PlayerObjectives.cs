@@ -11,7 +11,7 @@ public class PlayerObjectives : MonoBehaviour
         "Kapcsold fel az egyik tornyot",
         "Állítsd be a rádiót a második szobában",
         "Kapcsold fel a következő tornyot", 
-        "Kapcsold fel a biztosítékot a födszinten", 
+        "Vedd fel a frekvencia kódokat az asztalról", 
         "Kapcsold fel az utolsó tornyot" };
 
     [SerializeField] private int objectiveCounter = 0;
